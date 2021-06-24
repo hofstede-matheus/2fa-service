@@ -3,5 +3,5 @@ export class GenerateTwoFactorAuthenticationDto {
   safeEmail: string;
   safePhone: string;
 
-  information: string;
+  data: string;
 }

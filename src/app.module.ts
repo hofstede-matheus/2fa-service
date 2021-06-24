@@ -9,7 +9,7 @@ import { MongooseModule } from '@nestjs/mongoose';
   providers: [AppService],
   imports: [
     TwoFactorAuthenticationModule,
-    MongooseModule.forRoot('mongodb://localhost/nest')
+    MongooseModule.forRoot('mongodb://localhost:27017/2fa')
   ],
 })
 export class AppModule {}

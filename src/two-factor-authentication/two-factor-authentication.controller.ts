@@ -1,6 +1,6 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { TwoFactorAuthenticationService } from './two-factor-authentication.service';
-import { GenerateTwoFactorAuthenticationDto } from './dto/create-two-factor-authentication.dto';
+import { GenerateTwoFactorAuthenticationDto } from './dto/generate-two-factor-authentication.dto';
 
 @Controller('2fa')
 export class TwoFactorAuthenticationController {
@@ -8,12 +8,12 @@ export class TwoFactorAuthenticationController {
 
   @Post('generate')
   create(@Body() createTwoFactorAuthenticationDto: GenerateTwoFactorAuthenticationDto) {
-    return this.twoFactorAuthenticationService.create(createTwoFactorAuthenticationDto);
+    return this.twoFactorAuthenticationService.generate(createTwoFactorAuthenticationDto);
   }
 
   @Get('verify/:id/:code')
   findOne(@Param('id') id: string, @Param('code') code: string) {
-    return this.twoFactorAuthenticationService.findOne(+id);
+    return this.twoFactorAuthenticationService.verify(id, code);
   }
 
 }
