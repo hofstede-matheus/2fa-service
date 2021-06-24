@@ -1,4 +1,4 @@
-export class GenerateTwoFactorAuthenticationDto {
+export class TwoFactorAuthentication {
   userId: string;
   safeEmail: string;
   safePhone: string;

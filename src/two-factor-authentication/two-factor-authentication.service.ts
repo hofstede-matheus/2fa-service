@@ -1,10 +1,11 @@
 import { Injectable } from '@nestjs/common';
-import { CreateTwoFactorAuthenticationDto } from './dto/create-two-factor-authentication.dto';
+import { GenerateTwoFactorAuthenticationDto } from './dto/create-two-factor-authentication.dto';
 import { UpdateTwoFactorAuthenticationDto } from './dto/update-two-factor-authentication.dto';
 
 @Injectable()
 export class TwoFactorAuthenticationService {
-  create(createTwoFactorAuthenticationDto: CreateTwoFactorAuthenticationDto) {
+  create(createTwoFactorAuthenticationDto: GenerateTwoFactorAuthenticationDto) {
+    
     return 'This action adds a new twoFactorAuthentication';
   }
 
