@@ -3,10 +3,11 @@ import { TwoFactorAuthenticationService } from './two-factor-authentication.serv
 import { TwoFactorAuthenticationController } from './two-factor-authentication.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { TwoFactor, TwoFactorSchema } from './schema/twoFactorAuthentication.schema';
+import { EmailSenderService } from 'src/code-senders/senders/email-sender.service';
 
 @Module({
   imports: [MongooseModule.forFeature([{ name: TwoFactor.name, schema: TwoFactorSchema }])],
   controllers: [TwoFactorAuthenticationController],
-  providers: [TwoFactorAuthenticationService]
+  providers: [TwoFactorAuthenticationService, EmailSenderService]
 })
 export class TwoFactorAuthenticationModule {}

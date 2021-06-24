@@ -884,6 +884,13 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.17.4.tgz#218712242446fc868d0e007af29a4408c7765bc0"
   integrity sha512-8kQ3+wKGRNN0ghtEn7EGps/B8CzuBz1nXZEIGGLP2GnwbqYn4dbTs7k+VKLTq1HvZLRCIDtN3Snx1Ege8B7L5A==
 
+"@types/nodemailer@^6.4.2":
+  version "6.4.2"
+  resolved "https://registry.yarnpkg.com/@types/nodemailer/-/nodemailer-6.4.2.tgz#d8ee254c969e6ad83fb9a0a0df3a817406a3fa3b"
+  integrity sha512-yhsqg5Xbr8aWdwjFS3QjkniW5/tLpWXtOYQcJdo9qE3DolBxsKzgRCQrteaMY0hos8MklJNSEsMqDpZynGzMNg==
+  dependencies:
+    "@types/node" "*"
+
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
@@ -2104,6 +2111,11 @@ domexception@^2.0.1:
   integrity sha512-yxJ2mFy/sibVQlu5qHjOkf9J3K6zgmCxgJ94u2EdvDOV09H+32LtRswEcUsmUWN72pVLOEnTSRaIVVzVQgS0dg==
   dependencies:
     webidl-conversions "^5.0.0"
+
+dotenv@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-10.0.0.tgz#3d4227b8fb95f81096cdd2b66653fb2c7085ba81"
+  integrity sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -4213,6 +4225,11 @@ node-releases@^1.1.71:
   version "1.1.73"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.73.tgz#dd4e81ddd5277ff846b80b52bb40c49edf7a7b20"
   integrity sha512-uW7fodD6pyW2FZNZnp/Z3hvWKeEW1Y8R1+1CnErE8cXFXzl5blBOoVB41CvMer6P6Q0S5FXDwcHgFd1Wj0U9zg==
+
+nodemailer@^6.6.2:
+  version "6.6.2"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.6.2.tgz#e184c9ed5bee245a3e0bcabc7255866385757114"
+  integrity sha512-YSzu7TLbI+bsjCis/TZlAXBoM4y93HhlIgo0P5oiA2ua9Z4k+E2Fod//ybIzdJxOlXGRcHIh/WaeCBehvxZb/Q==
 
 normalize-package-data@^2.5.0:
   version "2.5.0"
