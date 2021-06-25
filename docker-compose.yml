@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+    db:
+      build:
+        context: .
+        dockerfile: Dockerfile.dev.mongo
+      container_name: 2fa-mongo-db
+      restart: always
+      tty: true
+      volumes: 
+        - ./data/db:/data/db
+      ports: 
+        - "27017:27017"
