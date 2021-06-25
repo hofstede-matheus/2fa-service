@@ -7,6 +7,7 @@
 Attach to your application/auth microservice, and instead of returning a token to the frontend, call this service to protect the token and send a 4-digit token to the user email or phone and then return a authorization token.
 
 ```
+docker-compose up
 rm -rf node_modules && yarn install --frozen-lockfile
 yarn start:dev
 ```
